@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Permintaan Maaf untuk Zindo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fef6f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #fff3e0;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      max-width: 600px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    b {
+      font-weight: bold;
+      font-size: 20px;
+      color: #d84315;
+    }
+
+    .buttons {
+      margin-top: 25px;
+    }
+
+    button {
+      font-size: 16px;
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    #yesBtn {
+      background-color: #43a047;
+      color: white;
+    }
+
+    #noBtn {
+      background-color: #e53935;
+      color: white;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p><b>Maaf ya Zindo</b></p>
+    <p>Maafin aku yang selalu salah, Aku akan belajar lebih baik lagi.</p>
+    <p>Akan selalu berusaha menjadi yang terbaik.</p>
+    <p>Harus dimaafin sihhh 🫵</p>
+
+    <div class="buttons">
+      <button id="yesBtn">Iya</button>
+      <button id="noBtn">Tidak</button>
+    </div>
+  </div>
+
+  <script>
+    const noBtn = document.getElementById("noBtn");
+
+    noBtn.addEventListener("mouseover", () => {
+      const x = Math.floor(Math.random() * 300) - 150;
+      const y = Math.floor(Math.random() * 300) - 150;
+      noBtn.style.transform = `translate(${x}px, ${y}px)`;
+    });
+
+    document.getElementById("yesBtn").addEventListener("click", () => {
+  window.location.href = "dimaafkan.html";
+});
+  </script>
+</body>
+</html>
